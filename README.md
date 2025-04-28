@@ -1,6 +1,6 @@
 <div align="center">
 
-<img weight="250" height="250" src="https://github.com/user-attachments/assets/39dde4df-53fa-4a5d-8cbf-2e4ed2fd7fee">
+<img weight="250" height="250" src="https://github.com/user-attachments/assets/8fd07982-c7df-4e60-8242-00c19b3db9f1">
 
 <h1>Aiogram Bot Template</h1>
 
