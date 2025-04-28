@@ -1,0 +1,9 @@
+greeting = Hello, user <b>{ $mention }</b>!
+help = I can not help you
+error = Something went wrong. Please try again later
+admin = Hello, admin <b>{ $mention }</b>!
+change_language = Choose your language:
+changed_language = Great, you've changed your language to <b>{ $language }</b>!
+button = Click me!
+clicked = You clicked the button!
+throttling = Please, wait!

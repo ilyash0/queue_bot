@@ -1,0 +1,108 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aiogram-template-bot"
+version = "0.1.0"
+description = "A template for creating Telegram bots."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [
+    { name = "MrConsole", email = "mrconsoleka.work@gmail.com" },
+]
+
+maintainers = [
+    { name = "MrConsole", email = "mrconsoleka.work@gmail.com" },
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+    "Topic :: Communications :: Chat",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+]
+
+dependencies = [
+    "aiofiles>=24.1.0",
+    "aiogram>=3.20.0.post0",
+    "aiogram-i18n>=1.4",
+    "asyncpg>=0.30.0",
+    "loguru>=0.7.3",
+    "pydantic>=2.11.3",
+    "pydantic-settings>=2.9.1",
+    "python-dotenv>=1.1.0",
+    "pytz>=2025.2",
+    "redis>=5.2.1",
+    "sqlalchemy>=2.0.40",
+    "aiohttp>=3.11.18",
+    "cachetools>=5.5.2",
+    "fluent-runtime>=0.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.11.7",
+    "mypy>=1.15.0",
+    "pre-commit>=4.2.0",
+    "isort>=6.0.1",
+    "black>=25.1.0",
+    "sqlalchemy[mypy]>=2.0.40",
+]
+
+[project.urls]
+Homepage = "https://github.com/MrConsoleka/aiogram-template-bot"
+Repository = "https://github.com/MrConsoleka/aiogram-template-bot"
+Documentation = "https://github.com/MrConsoleka/aiogram-template-bot#README"
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.12"
+plugins = ["sqlalchemy.ext.mypy.plugin"]
+disallow_untyped_defs = true
+exclude = ["aiogram_template_bot.egg-info", "source/data"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+src = ["source"]
+
+[tool.ruff.format]
+preview = true
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "lf"
+
+[tool.ruff.lint]
+select = ["ALL"]
+
+ignore = [
+    "E501",
+    "ANN401",
+    "RET504",
+    "PLC0414",
+    "SIM108",
+    "D",
+    "I",
+    "CPY001",
+    "F401",
+    "F811",
+    "BLE001",
+]
+
+unfixable = ["B"]
+
+[tool.ruff.lint.isort]
