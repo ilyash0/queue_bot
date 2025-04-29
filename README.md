@@ -51,8 +51,8 @@
 │   │
 │   ├───┐ 📂 data/
 │   │   ├── __init__.py
-│   │   ├── error_logs
-│   │   └── full_logs
+│   │   ├── 📂 error_logs
+│   │   └── 📂 full_logs
 │   │
 │   ├───┐ 📂 database/
 │   │   ├───┐ 📂 core/
@@ -264,10 +264,10 @@ cp .env.example .env
 
     ```shell
     # For Linux or macOS:
-    source venv/bin/activate
+    source .venv/bin/activate
 
     # For Windows:
-    venv\Scripts\activate
+    .venv\Scripts\activate
     ```
 
 5.  Install dependencies:
