@@ -1,7 +1,7 @@
 greeting = Привет, пользователь <b>{ $mention }</b>!
 help = Я не могу тебе помочь
 error = Что-то пошло не так. Пожалуйста, повторите попытку позже. 
-admin = Привет, администратор <b>{ $mention }</b>!
+admin = Привет, админ <b>{ $mention }</b>!
 change_language = Выбери свой язык:
 changed_language = Отлично, ты сменил язык на <b>{ $language }</b>!
 button = Нажми меня!
